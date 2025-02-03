@@ -131,7 +131,7 @@ foreach ($commandes as $commande) {
 }
 
 foreach ($commandes_details as $ligneCommande) {
-    $sql .= "INSERT INTO commandes_details (commande_id, produit_id, quantite) VALUES ({$ligneCommande['commandeId']}, {$ligneCommande['produitId']}, {$ligneCommande['quantite']});" . PHP_EOL;
+    $sql .= "INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES ({$ligneCommande['commandeId']}, {$ligneCommande['produitId']}, {$ligneCommande['quantite']});" . PHP_EOL;
 }
 
 //On écrit les requêtes SQL dans un fichier SQL pour sauvegarde
