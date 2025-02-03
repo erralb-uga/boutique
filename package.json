@@ -1,0 +1,16 @@
+{
+  "name": "boutique",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@dbml/cli": "^3.9.5",
+    "@softwaretechnik/dbml-renderer": "^1.0.30"
+  }
+}

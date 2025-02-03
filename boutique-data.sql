@@ -1,0 +1,74 @@
+INSERT INTO Client (id, nom, adresse) VALUES (1, 'Astrid Lemaire', '74, avenue Laurent Bouchet
+58728 Gautier-sur-Wagner');
+INSERT INTO Client (id, nom, adresse) VALUES (2, 'Gérard Roche', '4, avenue Boulanger
+49305 Godard');
+INSERT INTO Client (id, nom, adresse) VALUES (3, 'Stéphanie Boyer-Prevost', '6, boulevard de Duhamel
+04620 Costa-les-Bains');
+INSERT INTO Client (id, nom, adresse) VALUES (4, 'Pierre Renard-Bruneau', '2, rue François Ribeiro
+24736 Peltier-sur-Mer');
+INSERT INTO Client (id, nom, adresse) VALUES (5, 'Capucine du Leblanc', '83, rue de Leduc
+56146 GeorgesBourg');
+
+INSERT INTO Produit (id, label, description, prix) VALUES (1, 'officia', 'Et minima dolor aspernatur ratione repellat officiis.', 83.22);
+INSERT INTO Produit (id, label, description, prix) VALUES (2, 'aliquam', 'Quia dolore necessitatibus vel nisi asperiores.', 55.48);
+INSERT INTO Produit (id, label, description, prix) VALUES (3, 'enim', 'Et eaque voluptas sed.', 56.87);
+INSERT INTO Produit (id, label, description, prix) VALUES (4, 'cum', 'Voluptatem hic quo fuga consequatur.', 80.9);
+INSERT INTO Produit (id, label, description, prix) VALUES (5, 'quia', 'Alias quia unde enim est optio.', 25.68);
+INSERT INTO Produit (id, label, description, prix) VALUES (6, 'voluptas', 'Quaerat voluptatibus autem quibusdam qui aliquid facilis ratione dignissimos.', 13.48);
+INSERT INTO Produit (id, label, description, prix) VALUES (7, 'eveniet', 'Nesciunt explicabo voluptas repudiandae voluptate sint nesciunt veritatis voluptate.', 47.31);
+INSERT INTO Produit (id, label, description, prix) VALUES (8, 'nesciunt', 'Culpa excepturi aut vitae eaque quae.', 42.7);
+INSERT INTO Produit (id, label, description, prix) VALUES (9, 'consequatur', 'Perferendis fugit aut maiores eos qui impedit.', 28.65);
+INSERT INTO Produit (id, label, description, prix) VALUES (10, 'sed', 'Fugiat consequuntur est excepturi quis voluptatum quaerat suscipit.', 3.89);
+INSERT INTO Commande (id, date, client_id) VALUES (1, '2025-01-22 22:35:56', 2);
+INSERT INTO Commande (id, date, client_id) VALUES (2, '2025-01-30 11:36:14', 2);
+INSERT INTO Commande (id, date, client_id) VALUES (3, '2025-01-24 18:35:10', 2);
+INSERT INTO Commande (id, date, client_id) VALUES (4, '2025-01-30 04:44:13', 2);
+INSERT INTO Commande (id, date, client_id) VALUES (5, '2025-01-09 11:38:31', 2);
+INSERT INTO Commande (id, date, client_id) VALUES (6, '2025-01-06 17:29:31', 2);
+INSERT INTO Commande (id, date, client_id) VALUES (7, '2025-01-01 01:00:27', 2);
+INSERT INTO Commande (id, date, client_id) VALUES (8, '2025-02-02 20:23:20', 2);
+INSERT INTO Commande (id, date, client_id) VALUES (9, '2025-01-31 19:19:32', 2);
+INSERT INTO Commande (id, date, client_id) VALUES (10, '2025-01-13 05:38:47', 2);
+INSERT INTO Commande (id, date, client_id) VALUES (11, '2025-01-14 00:06:20', 3);
+INSERT INTO Commande (id, date, client_id) VALUES (12, '2025-01-26 23:24:04', 3);
+INSERT INTO Commande (id, date, client_id) VALUES (13, '2025-01-10 19:02:31', 3);
+INSERT INTO Commande (id, date, client_id) VALUES (14, '2025-01-20 03:36:44', 3);
+INSERT INTO Commande (id, date, client_id) VALUES (15, '2025-02-02 04:03:44', 3);
+INSERT INTO Commande (id, date, client_id) VALUES (16, '2025-01-30 08:14:07', 3);
+INSERT INTO Commande (id, date, client_id) VALUES (17, '2025-01-02 18:13:24', 3);
+INSERT INTO Commande (id, date, client_id) VALUES (18, '2025-01-23 01:18:32', 3);
+INSERT INTO Commande (id, date, client_id) VALUES (19, '2025-01-03 12:13:45', 3);
+INSERT INTO Commande (id, date, client_id) VALUES (20, '2025-01-01 13:22:29', 3);
+INSERT INTO Commande (id, date, client_id) VALUES (21, '2025-01-18 17:44:38', 4);
+INSERT INTO Commande (id, date, client_id) VALUES (22, '2025-01-11 15:52:15', 5);
+INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (1, 1, 3);
+INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (2, 2, 3);
+INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (3, 3, 5);
+INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (4, 4, 2);
+INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (5, 5, 4);
+INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (6, 6, 3);
+INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (7, 7, 5);
+INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (8, 8, 5);
+INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (9, 9, 3);
+INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (10, 10, 4);
+INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (11, 1, 1);
+INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (12, 1, 1);
+INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (13, 1, 1);
+INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (14, 1, 1);
+INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (15, 1, 1);
+INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (16, 1, 1);
+INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (17, 1, 1);
+INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (18, 1, 1);
+INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (19, 1, 1);
+INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (20, 1, 1);
+INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (21, 1, 3);
+INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (21, 2, 5);
+INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (21, 3, 3);
+INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (21, 4, 3);
+INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (21, 5, 2);
+INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (21, 6, 5);
+INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (21, 7, 4);
+INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (21, 8, 1);
+INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (21, 9, 2);
+INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (21, 10, 3);
+INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (22, 1, 1);

@@ -1,0 +1,9 @@
+# dependencies
+node_modules/
+vendor
+
+# environment variables
+.env
+
+# macOS-specific files
+.DS_Store
