@@ -28,7 +28,7 @@ Les logiciels suivants sont nécessaires pour exécuter ce projet :
 4. Dupliquer le fichier `.env.example` en `.env` à la racine du projet et ajoutez-y les informations de connexion à votre base de données
 5. Initialiser la base de données avec la génération des données `php boutique-generate.php --dbml --data`
 
-Par défaut, le projet est configuré pour utiliser MySQL. Si vous utilisez PostgreSQL, vous devez modifier le fichier `boutique-generate.php` et retirer l'option `--mysql` de la commande `exec('dbml2sql boutique-schema.dbml -o boutique-schema.sql --mysql');`
+Par défaut, le projet est configuré pour utiliser MySQL. Si vous utilisez PostgreSQL, vous devez modifier le fichier `boutique-generate.php` et retirer l'option `--mysql` de la commande `exec('npx dbml2sql boutique-schema.dbml -o boutique-schema.sql --mysql');`
 
 ## Diagramme ERD
 

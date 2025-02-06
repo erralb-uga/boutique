@@ -8,9 +8,9 @@ $opts = getopt('', ['dbml', 'data']);
 
 if (isset($opts['dbml'])) {
      //regenerate SQL schema from DBML file
-    exec('dbml2sql boutique-schema.dbml -o boutique-schema.sql --mysql');
+    exec('npx dbml2sql boutique-schema.dbml -o boutique-schema.sql --mysql');
     //generate svg from DBML file
-    exec('dbml-renderer -i boutique-schema.dbml -o boutique-erd.svg');
+    exec('npx dbml-renderer -i boutique-schema.dbml -o boutique-erd.svg');
 }
 
 if (isset($opts['data'])) { //regenerate SQL data from PHP file
