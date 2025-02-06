@@ -20,14 +20,14 @@ if (isset($opts['data'])) { //regenerate SQL data from PHP file
 // Get connection details data from Dotenv file
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->load();
-$connection_string = $_ENV['DB_DRIVER'] . ':host=' . $_ENV['DB_HOST'] . ';dbname=' . $_ENV['DB_NAME'];
+// $connection_string = $_ENV['DB_DRIVER'] . ':host=' . $_ENV['DB_HOST'] . ';dbname=' . $_ENV['DB_NAME'];
+$connection_string = $_ENV['DB_DRIVER'] . ':host=' . $_ENV['DB_HOST'];
 
 // Create a new PDO instance
 $pdo = new PDO($connection_string, $_ENV['DB_USER'], $_ENV['DB_PASS']);
 
 
 //drop and recreate the database
-$pdo = new PDO('mysql:host=localhost', 'phpmy', 'phpmy');
 $pdo->exec('DROP DATABASE IF EXISTS boutique');
 $pdo->exec('CREATE DATABASE boutique');
 $pdo->exec('USE boutique');

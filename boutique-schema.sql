@@ -1,6 +1,6 @@
 -- SQL dump generated using DBML (dbml.dbdiagram.io)
 -- Database: MySQL
--- Generated at: 2025-02-03T08:30:05.335Z
+-- Generated at: 2025-02-06T08:43:34.233Z
 
 CREATE TABLE `Client` (
   `id` int PRIMARY KEY AUTO_INCREMENT COMMENT 'Identifiant unique du client',

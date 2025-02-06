@@ -1,56 +1,55 @@
-INSERT INTO Client (id, nom, adresse) VALUES (1, 'Astrid Lemaire', '74, avenue Laurent Bouchet
-58728 Gautier-sur-Wagner');
-INSERT INTO Client (id, nom, adresse) VALUES (2, 'Gérard Roche', '4, avenue Boulanger
-49305 Godard');
-INSERT INTO Client (id, nom, adresse) VALUES (3, 'Stéphanie Boyer-Prevost', '6, boulevard de Duhamel
-04620 Costa-les-Bains');
-INSERT INTO Client (id, nom, adresse) VALUES (4, 'Pierre Renard-Bruneau', '2, rue François Ribeiro
-24736 Peltier-sur-Mer');
-INSERT INTO Client (id, nom, adresse) VALUES (5, 'Capucine du Leblanc', '83, rue de Leduc
-56146 GeorgesBourg');
-
-INSERT INTO Produit (id, label, description, prix) VALUES (1, 'officia', 'Et minima dolor aspernatur ratione repellat officiis.', 83.22);
-INSERT INTO Produit (id, label, description, prix) VALUES (2, 'aliquam', 'Quia dolore necessitatibus vel nisi asperiores.', 55.48);
-INSERT INTO Produit (id, label, description, prix) VALUES (3, 'enim', 'Et eaque voluptas sed.', 56.87);
-INSERT INTO Produit (id, label, description, prix) VALUES (4, 'cum', 'Voluptatem hic quo fuga consequatur.', 80.9);
-INSERT INTO Produit (id, label, description, prix) VALUES (5, 'quia', 'Alias quia unde enim est optio.', 25.68);
-INSERT INTO Produit (id, label, description, prix) VALUES (6, 'voluptas', 'Quaerat voluptatibus autem quibusdam qui aliquid facilis ratione dignissimos.', 13.48);
-INSERT INTO Produit (id, label, description, prix) VALUES (7, 'eveniet', 'Nesciunt explicabo voluptas repudiandae voluptate sint nesciunt veritatis voluptate.', 47.31);
-INSERT INTO Produit (id, label, description, prix) VALUES (8, 'nesciunt', 'Culpa excepturi aut vitae eaque quae.', 42.7);
-INSERT INTO Produit (id, label, description, prix) VALUES (9, 'consequatur', 'Perferendis fugit aut maiores eos qui impedit.', 28.65);
-INSERT INTO Produit (id, label, description, prix) VALUES (10, 'sed', 'Fugiat consequuntur est excepturi quis voluptatum quaerat suscipit.', 3.89);
-INSERT INTO Commande (id, date, client_id) VALUES (1, '2025-01-22 22:35:56', 2);
-INSERT INTO Commande (id, date, client_id) VALUES (2, '2025-01-30 11:36:14', 2);
-INSERT INTO Commande (id, date, client_id) VALUES (3, '2025-01-24 18:35:10', 2);
-INSERT INTO Commande (id, date, client_id) VALUES (4, '2025-01-30 04:44:13', 2);
-INSERT INTO Commande (id, date, client_id) VALUES (5, '2025-01-09 11:38:31', 2);
-INSERT INTO Commande (id, date, client_id) VALUES (6, '2025-01-06 17:29:31', 2);
-INSERT INTO Commande (id, date, client_id) VALUES (7, '2025-01-01 01:00:27', 2);
-INSERT INTO Commande (id, date, client_id) VALUES (8, '2025-02-02 20:23:20', 2);
-INSERT INTO Commande (id, date, client_id) VALUES (9, '2025-01-31 19:19:32', 2);
-INSERT INTO Commande (id, date, client_id) VALUES (10, '2025-01-13 05:38:47', 2);
-INSERT INTO Commande (id, date, client_id) VALUES (11, '2025-01-14 00:06:20', 3);
-INSERT INTO Commande (id, date, client_id) VALUES (12, '2025-01-26 23:24:04', 3);
-INSERT INTO Commande (id, date, client_id) VALUES (13, '2025-01-10 19:02:31', 3);
-INSERT INTO Commande (id, date, client_id) VALUES (14, '2025-01-20 03:36:44', 3);
-INSERT INTO Commande (id, date, client_id) VALUES (15, '2025-02-02 04:03:44', 3);
-INSERT INTO Commande (id, date, client_id) VALUES (16, '2025-01-30 08:14:07', 3);
-INSERT INTO Commande (id, date, client_id) VALUES (17, '2025-01-02 18:13:24', 3);
-INSERT INTO Commande (id, date, client_id) VALUES (18, '2025-01-23 01:18:32', 3);
-INSERT INTO Commande (id, date, client_id) VALUES (19, '2025-01-03 12:13:45', 3);
-INSERT INTO Commande (id, date, client_id) VALUES (20, '2025-01-01 13:22:29', 3);
-INSERT INTO Commande (id, date, client_id) VALUES (21, '2025-01-18 17:44:38', 4);
-INSERT INTO Commande (id, date, client_id) VALUES (22, '2025-01-11 15:52:15', 5);
-INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (1, 1, 3);
-INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (2, 2, 3);
+INSERT INTO Client (id, nom, adresse) VALUES (1, 'Sabine-Victoire Weiss', '21, rue Vasseur
+33365 Pichon');
+INSERT INTO Client (id, nom, adresse) VALUES (2, 'Dorothée Bouvier', 'boulevard Laporte
+75848 Pineau');
+INSERT INTO Client (id, nom, adresse) VALUES (3, 'William Herve', '69, rue Guyot
+42477 Lebon-les-Bains');
+INSERT INTO Client (id, nom, adresse) VALUES (4, 'Audrey Jacquot', '6, impasse Lombard
+36792 Perretboeuf');
+INSERT INTO Client (id, nom, adresse) VALUES (5, 'Marguerite-Denise Bodin', '904, impasse de Jourdan
+86704 Clement-sur-Barre');
+INSERT INTO Produit (id, label, description, prix) VALUES (1, 'error', 'Commodi qui hic voluptates dolor nisi.', 14.67);
+INSERT INTO Produit (id, label, description, prix) VALUES (2, 'itaque', 'Consequatur nihil sunt perspiciatis voluptatum.', 90.34);
+INSERT INTO Produit (id, label, description, prix) VALUES (3, 'enim', 'Consequatur consequatur blanditiis cupiditate laudantium minima quo quos.', 58.6);
+INSERT INTO Produit (id, label, description, prix) VALUES (4, 'dolorem', 'Fugit voluptatem fugiat dignissimos odio ducimus.', 33.61);
+INSERT INTO Produit (id, label, description, prix) VALUES (5, 'incidunt', 'Omnis magni beatae ratione iusto sed fugiat ipsum.', 28.36);
+INSERT INTO Produit (id, label, description, prix) VALUES (6, 'eligendi', 'Quidem provident quidem deserunt et tempore dolorum.', 82.2);
+INSERT INTO Produit (id, label, description, prix) VALUES (7, 'et', 'Optio delectus sint aut voluptatem qui quisquam cumque.', 24.75);
+INSERT INTO Produit (id, label, description, prix) VALUES (8, 'repudiandae', 'Quia ipsum soluta voluptatibus aperiam doloremque rerum.', 10.02);
+INSERT INTO Produit (id, label, description, prix) VALUES (9, 'qui', 'Sint est nihil ut vel accusamus.', 19.64);
+INSERT INTO Produit (id, label, description, prix) VALUES (10, 'magni', 'Sapiente accusantium ad aut voluptatem.', 9.45);
+INSERT INTO Commande (id, date, client_id) VALUES (1, '2025-01-20 07:07:49', 2);
+INSERT INTO Commande (id, date, client_id) VALUES (2, '2025-01-31 14:46:54', 2);
+INSERT INTO Commande (id, date, client_id) VALUES (3, '2025-01-27 04:33:17', 2);
+INSERT INTO Commande (id, date, client_id) VALUES (4, '2025-01-15 07:19:44', 2);
+INSERT INTO Commande (id, date, client_id) VALUES (5, '2025-01-07 11:43:51', 2);
+INSERT INTO Commande (id, date, client_id) VALUES (6, '2025-01-18 11:04:23', 2);
+INSERT INTO Commande (id, date, client_id) VALUES (7, '2025-01-23 15:25:43', 2);
+INSERT INTO Commande (id, date, client_id) VALUES (8, '2025-01-07 10:23:48', 2);
+INSERT INTO Commande (id, date, client_id) VALUES (9, '2025-01-15 17:51:13', 2);
+INSERT INTO Commande (id, date, client_id) VALUES (10, '2025-01-04 03:53:32', 2);
+INSERT INTO Commande (id, date, client_id) VALUES (11, '2025-01-06 10:33:08', 3);
+INSERT INTO Commande (id, date, client_id) VALUES (12, '2025-01-04 19:30:18', 3);
+INSERT INTO Commande (id, date, client_id) VALUES (13, '2025-01-20 05:21:50', 3);
+INSERT INTO Commande (id, date, client_id) VALUES (14, '2025-02-01 11:16:43', 3);
+INSERT INTO Commande (id, date, client_id) VALUES (15, '2025-01-30 23:33:12', 3);
+INSERT INTO Commande (id, date, client_id) VALUES (16, '2025-01-06 20:35:15', 3);
+INSERT INTO Commande (id, date, client_id) VALUES (17, '2025-01-07 01:18:36', 3);
+INSERT INTO Commande (id, date, client_id) VALUES (18, '2025-01-20 13:46:07', 3);
+INSERT INTO Commande (id, date, client_id) VALUES (19, '2025-01-28 21:56:07', 3);
+INSERT INTO Commande (id, date, client_id) VALUES (20, '2025-01-17 19:01:27', 3);
+INSERT INTO Commande (id, date, client_id) VALUES (21, '2025-01-06 10:37:30', 4);
+INSERT INTO Commande (id, date, client_id) VALUES (22, '2025-01-13 13:49:37', 5);
+INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (1, 1, 2);
+INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (2, 2, 5);
 INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (3, 3, 5);
-INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (4, 4, 2);
-INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (5, 5, 4);
+INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (4, 4, 4);
+INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (5, 5, 2);
 INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (6, 6, 3);
-INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (7, 7, 5);
-INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (8, 8, 5);
-INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (9, 9, 3);
-INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (10, 10, 4);
+INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (7, 7, 2);
+INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (8, 8, 2);
+INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (9, 9, 1);
+INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (10, 10, 2);
 INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (11, 1, 1);
 INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (12, 1, 1);
 INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (13, 1, 1);
@@ -61,14 +60,14 @@ INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (17, 1, 1)
 INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (18, 1, 1);
 INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (19, 1, 1);
 INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (20, 1, 1);
-INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (21, 1, 3);
-INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (21, 2, 5);
-INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (21, 3, 3);
-INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (21, 4, 3);
-INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (21, 5, 2);
-INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (21, 6, 5);
+INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (21, 1, 1);
+INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (21, 2, 1);
+INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (21, 3, 1);
+INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (21, 4, 4);
+INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (21, 5, 1);
+INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (21, 6, 2);
 INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (21, 7, 4);
-INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (21, 8, 1);
-INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (21, 9, 2);
-INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (21, 10, 3);
+INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (21, 8, 2);
+INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (21, 9, 5);
+INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (21, 10, 4);
 INSERT INTO CommandeDetail (commande_id, produit_id, quantite) VALUES (22, 1, 1);

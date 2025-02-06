@@ -7,3 +7,5 @@ vendor
 
 # macOS-specific files
 .DS_Store
+
+dbml-error.log
