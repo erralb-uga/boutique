@@ -13,12 +13,12 @@ Ce projet présente la conception de la base de données d'une boutique en ligne
 
 Les logiciels suivants sont nécessaires pour exécuter ce projet :
 
-- Git
-- PHP 7.4 ou supérieur
-- Composer
-- NodeJS
-- npm
-- Un serveur de base de données MySQL ou MariaDB
+- [Git](https://git-scm.com/)
+- [PHP 8+](https://www.php.net/downloads.php)
+- [Composer](https://getcomposer.org/)
+- [NodeJS](https://nodejs.org/)
+- [npm](https://www.npmjs.com/) (En général installé avec NodeJS)
+- Un serveur de base de données [MySQL](https://www.mysql.com/), [MariaDB](https://mariadb.org/) ou [PostgreSQL](https://www.postgresql.org/)
 
 ## Installation
 
@@ -26,9 +26,7 @@ Les logiciels suivants sont nécessaires pour exécuter ce projet :
 2. Installer les dépendances NodeJS avec `npm install`
 3. Installer les dépendances PHP avec `composer install`
 4. Dupliquer le fichier `.env.example` en `.env` à la racine du projet et ajoutez-y les informations de connexion à votre base de données
-5. Initialiser la base de données avec la génération des données `php boutique-generate.php --dbml --data`
 
-Par défaut, le projet est configuré pour utiliser MySQL. Si vous utilisez PostgreSQL, vous devez modifier le fichier `boutique-generate.php` et retirer l'option `--mysql` de la commande `exec('npx dbml2sql boutique-schema.dbml -o boutique-schema.sql --mysql');`
 
 ```
 git clone https://github.com/erralb-uga/boutique.git
@@ -36,9 +34,8 @@ cd boutique
 npm install
 composer install
 cp .env.example .env
-php boutique-generate.php --dbml --data
+php boutique-generate.php --dbml --generate --data
 ```
-
 
 ## Diagramme ERD
 
