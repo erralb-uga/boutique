@@ -4,10 +4,10 @@ Ce projet présente la conception de la base de données d'une boutique en ligne
 
 ## Fonctionnalités
 
-- Génération du code SQL DDL à partir d'un fichier DBML
+- Génération du schéma aux formats SQL et SVG à partir d'un fichier DBML
+- Génération de données de test avec Faker PHP
 - Création de la base de données dans un SGBD
-- Génération de données de test
-- Insertion des données de test dans la base de données
+- Insertion des données dans la base de données
 
 ## Prérequis
 
@@ -26,7 +26,6 @@ Les logiciels suivants sont nécessaires pour exécuter ce projet :
 2. Installer les dépendances NodeJS avec `npm install`
 3. Installer les dépendances PHP avec `composer install`
 4. Dupliquer le fichier `.env.example` en `.env` à la racine du projet et ajoutez-y les informations de connexion à votre base de données
-
 
 ```
 git clone https://github.com/erralb-uga/boutique.git
