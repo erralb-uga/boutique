@@ -2,7 +2,13 @@ Ce document présente la conception d'une base de données pour une boutique en 
 
 # Énoncé
 
-On souhaite informatiser une boutique en ligne. Les clients ont un numéro unique, un nom et une adresse. Les clients passent des commandes à une date donnée et les commandes sont identifiées par un numéro unique. Elles ont des lignes de détails qui référencent chaque produit commandé ainsi que la quantité commandée. Les produits sont identifiés par un numéro unique, ont un label, une description et un prix unitaire.
+On souhaite informatiser une **boutique** en ligne. Les **clients** ont un _numéro unique_, un _nom_ et une _adresse_. 
+
+Les **clients** passent des **commandes** à une _date_ donnée et les commandes sont identifiées par un _numéro unique_. 
+
+Elles ont des **lignes de détails** qui référencent chaque **produit** commandé ainsi que la _quantité_ commandée. 
+
+Les **produits** sont identifiés par un _numéro unique_, ont un _label_, une _description_ et un _prix unitaire_.
 
 # Décomposition
 
@@ -41,43 +47,80 @@ On souhaite informatiser une boutique en ligne. Les clients ont un numéro uniqu
 
 ## Entités
 
-- Client
-- Commande
-- CommandeDetail
-- Produit
+D'après l'énoncé, on a identifié les types d'entités suivantes:
+
+- **Client** : Les clients de la boutique.
+- **Commande** : Les commandes passées par les clients
+- **CommandeDetail** : Les lignes de détails des commandes
+- **Produit** : Les produits vendus par la boutique
 
 ## Associations
 
-- Client - Commande
-- Commande - CommandeDetail
-- CommandeDetail - Produit
+- Client - Commande : **(1,n)**
+    - Un client peut passer plusieurs commandes.
+    - Une commande est passée par un seul client.
+
+- Commande - CommandeDetail : **(1,n)**
+    - Une commande peut contenir plusieurs lignes de détails.
+    - Une ligne de détail est associée à une seule commande.
+
+- CommandeDetail - Produit **(1,1)**
+    - Une ligne de détail est associée à un seul produit.
+    - Un produit peut être associé à plusieurs lignes de détails.
 
 ## Attributs
 
 ### Client
 
-- id: int
-- nom: string
+- id: int, PK
+- nom: string, not null
 - adresse: string
 
 ### Commande
 
-- id: int
-- date: date
+- id: int, PK, not null
+- date: date, not null
 - id_client: int
 
 ### CommandeDetail
 
-- id_commande: int
-- id_produit: int
-- quantite: int
+- id_commande: int, PK
+- id_produit: int, PK
+- quantite: int, not null, > 0
 
 ### Produit
 
-- id: int
-- label: string
-- description: string
-- prix: float
+- id: int, PK, not null
+- label: string, not null, unique
+- description: string, not null
+- prix: float, not null, > 0
+
+## Contraintes
+
+### Intégrité référentielle
+
+- Commande: id_client référence Client.id
+- CommandeDetail: id_commande référence Commande.id, id_produit référence Produit.id
+
+### Unicités
+
+- Chaque client a un numéro unique.
+- Chaque commande est identifiée par un numéro unique.
+- Chaque produit est identifié par un numéro et un label unique.
+
+### Non-nullité:
+
+- Client: id, nom
+- Commande: id, date, id_client
+- CommandeDetail: id_commande, id_produit, quantite
+- Produit: id, label, prix
+
+### Contraintes de domaine
+
+- Client: id > 0
+- Commande: id > 0
+- CommandeDetail: quantite > 0
+- Produit: id > 0, prix > 0
 
 ## Diagramme ERD
 

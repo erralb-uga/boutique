@@ -11,7 +11,7 @@ Table Client {
 
 Table Commande {
   id int [pk, increment, note: 'Identifiant unique de la commande']
-  date date [default: `now()`, note: 'Date de la commande']
+  date date [default: `now()`, note: 'Date de la commande au format YYYY-MM-DD HH:MM:SS']
   client_id int [ref: > Client.id, note: 'Identifiant du client']
 }
 
@@ -25,5 +25,5 @@ Table Produit {
   id int [pk, increment, note: 'Identifiant unique du produit']
   label varchar [unique, not null, note: 'Nom du produit']
   description text [not null, note: 'Description du produit']
-  prix decimal [default: 1.0, note: 'Prix unitaire du produit']
+  prix decimal [default: 1.0, note: 'Prix unitaire du produit, en euros, avec 2 chiffres après la virgule, ex: 12.34, doit être >= 0']
 }
