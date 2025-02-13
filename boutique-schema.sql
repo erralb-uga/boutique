@@ -1,6 +1,6 @@
 -- SQL dump generated using DBML (dbml.dbdiagram.io)
 -- Database: MySQL
--- Generated at: 2025-02-06T08:43:34.233Z
+-- Generated at: 2025-02-13T08:41:01.102Z
 
 CREATE TABLE `Client` (
   `id` int PRIMARY KEY AUTO_INCREMENT COMMENT 'Identifiant unique du client',
@@ -10,7 +10,7 @@ CREATE TABLE `Client` (
 
 CREATE TABLE `Commande` (
   `id` int PRIMARY KEY AUTO_INCREMENT COMMENT 'Identifiant unique de la commande',
-  `date` date DEFAULT (now()) COMMENT 'Date de la commande',
+  `date` date DEFAULT (now()) COMMENT 'Date de la commande au format YYYY-MM-DD HH:MM:SS',
   `client_id` int COMMENT 'Identifiant du client'
 );
 
@@ -25,7 +25,7 @@ CREATE TABLE `Produit` (
   `id` int PRIMARY KEY AUTO_INCREMENT COMMENT 'Identifiant unique du produit',
   `label` varchar(255) UNIQUE NOT NULL COMMENT 'Nom du produit',
   `description` text NOT NULL COMMENT 'Description du produit',
-  `prix` decimal DEFAULT 1 COMMENT 'Prix unitaire du produit'
+  `prix` decimal DEFAULT 1 COMMENT 'Prix unitaire du produit, en euros, avec 2 chiffres après la virgule, ex: 12.34, doit être >= 0'
 );
 
 ALTER TABLE `Commande` ADD FOREIGN KEY (`client_id`) REFERENCES `Client` (`id`);
