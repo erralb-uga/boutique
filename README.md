@@ -30,6 +30,16 @@ Les logiciels suivants sont nécessaires pour exécuter ce projet :
 
 Par défaut, le projet est configuré pour utiliser MySQL. Si vous utilisez PostgreSQL, vous devez modifier le fichier `boutique-generate.php` et retirer l'option `--mysql` de la commande `exec('npx dbml2sql boutique-schema.dbml -o boutique-schema.sql --mysql');`
 
+```
+git clone https://github.com/erralb-uga/boutique.git
+cd boutique
+npm install
+composer install
+cp .env.example .env
+php boutique-generate.php --dbml --data
+```
+
+
 ## Diagramme ERD
 
 ![Diagramme ERD](boutique-erd.svg)
